@@ -6,9 +6,9 @@ Este projeto implementa um sistema de comunicação entre cliente e servidor, ut
 # O que é RSA?
 RSA (Rivest-Shamir-Adleman) é um algoritmo de criptografia assimétrica amplamente utilizado para proteger dados na comunicação digital. Ele utiliza um par de chaves: uma chave pública para criptografar a mensagem e uma chave privada para descriptografá-la. O algoritmo se baseia na dificuldade de fatoração de grandes números primos, o que torna a criptografia extremamente segura.
 
-Chave pública (e, n): Utilizada para criptografar a mensagem.
+- Chave pública (e, n): Utilizada para criptografar a mensagem.
 
-Chave privada (d, n): Utilizada para descriptografar a mensagem.
+- Chave privada (d, n): Utilizada para descriptografar a mensagem.
 
 A segurança do RSA se baseia no fato de que, mesmo conhecendo a chave pública, é computacionalmente difícil calcular a chave privada.
 
@@ -31,7 +31,7 @@ Criptografia de Mensagens:
 O cliente envia uma mensagem digitada, que é criptografada utilizando a chave pública do servidor.
 O servidor recebe a mensagem criptografada, a descriptografa com sua chave privada, transforma a mensagem para maiúsculas e a criptografa novamente com a chave pública do cliente.
 
-Descriptografando Respostas:
+Descriptografar as Respostas:
 O cliente recebe a mensagem criptografada do servidor e a descriptografa com sua chave privada, exibindo a resposta processada.
 
 # Como Funciona o Código
